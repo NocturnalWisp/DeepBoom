@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1788777574495940}
+  m_IsPrefabParent: 1
+--- !u!1 &1788777574495940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4213571634325694}
+  - component: {fileID: 212212325629324028}
+  - component: {fileID: 114195184878247564}
+  m_Layer: 10
+  m_Name: background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4213571634325694
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1788777574495940}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114195184878247564
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1788777574495940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e120c467ce8e1a4fa10cb602d8ed077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disabled: 0
+  paused: 0
+  spawnables:
+  - name: large island 1
+    amount: 1
+    prefab: {fileID: 1100320172377754, guid: 9d9ad7b3754ac844aafb6f02774bfdfd, type: 2}
+  - name: medium island 1
+    amount: 5
+    prefab: {fileID: 1580873077102812, guid: 6d20a090c64b4214db4fde8af717e7e3, type: 2}
+  - name: small island 1
+    amount: 10
+    prefab: {fileID: 1676794109986040, guid: b8ab84d08def32c4485690adb4f3d56f, type: 2}
+  - name: small island 2
+    amount: 10
+    prefab: {fileID: 1333795582769308, guid: cc8dd101f446de34a908f5dfc2bb04a9, type: 2}
+  - name: small island 3
+    amount: 10
+    prefab: {fileID: 1170052618133656, guid: bf96695136d01274ab0fc23d1b10375a, type: 2}
+  - name: small island 4
+    amount: 10
+    prefab: {fileID: 1811864113920160, guid: a34f6ebdad3efe14dabc25f65d300770, type: 2}
+  ships:
+  - {fileID: 1032423733984278, guid: 82359b73c4f8a1840a19d3b4570e899b, type: 2}
+  - {fileID: 1124922708747574, guid: 74e4e5b4bc01fb5418d1d501b2046711, type: 2}
+  - {fileID: 1035458867748894, guid: 437c2e595aa92234b9396f5050779c41, type: 2}
+  - {fileID: 1757825473280194, guid: 9eab1847234163742a96be978508d990, type: 2}
+  - {fileID: 1828473564680718, guid: 7985d088c5f45c74f9a0ab16b846036c, type: 2}
+  flags:
+  - {fileID: 1230891810905768, guid: eeb4ecb504dee45469d9dbfc5583a958, type: 2}
+  - {fileID: 1188840858529176, guid: dc11791976192aa459edb39a94080aba, type: 2}
+  - {fileID: 1506970300495476, guid: 71ace19234a5e4f49b009aeb0db67b2c, type: 2}
+  - {fileID: 1946414759161676, guid: fbd4a3cdd4c27a948ad446317c750a46, type: 2}
+  - {fileID: 1587786458132584, guid: 83318700c551b5e448d81b18b1a604db, type: 2}
+  - {fileID: 1107373063872360, guid: 00f99564f706ba449b89554b8e123771, type: 2}
+  directionIndicator: {fileID: 0}
+  forts:
+  - name: fort 1
+    amount: 3
+    prefab: {fileID: 1384940591240970, guid: 7463618f277ec804681c1487d64a2519, type: 2}
+  - name: large fort 1
+    amount: 1
+    prefab: {fileID: 1634623858076632, guid: 8935c0211fd88194882e001281eb8a8a, type: 2}
+  objects: []
+  capturedIslands: []
+  misc: []
+  player: {fileID: 0}
+  miscellanneous:
+  - name: repairIsland
+    amount: 15
+    prefab: {fileID: 1452057043526034, guid: 80263d5062163d94e9106e9fc53092ad, type: 2}
+  cI: {fileID: 1382674170674676, guid: 6c35e7bbdf8c05c41b338c5279474872, type: 2}
+  capturedIcon: {fileID: 0}
+  posX: 0
+  posY: 0
+  negX: 0
+  negY: 0
+--- !u!212 &212212325629324028
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1788777574495940}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -3
+  m_Sprite: {fileID: 21300000, guid: 5d8d544cca0f2254bad147494078980d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
